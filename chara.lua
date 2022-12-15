@@ -922,7 +922,7 @@ function HandleAttack()
 		engcom="Чара готовит Бластеры Хаоса[waitall:4][w:3]...[waitall:1][w:5]\nПогоди,[w:3] мне это что-то напомнило[waitall:4][w:3]..."
 		ruscom="Chara readies Chaos Blasters[waitall:4][w:3]...[waitall:1][w:5]\nWait,[w:3] why does it sound so familiar?"
 		wav={"phase1/bullettest_bouncy"}
-	elseif GetGlobal("progress")=21 then
+	elseif GetGlobal("progress")==21 then
 		neng={"[func:NoMercy1]Я изучала тебя.", "[func:Think]Следила за каждым \nтвоим шагом.[w:6] [func:head]И \nпришла к некоторым \nинтересным выводам.", "[func:NoMercy1]Азриэль верил,[w:3] что \nты великий человек.[w:6] \n[func:Think]Так и есть.", "[func:NoMercy1]Но твоя \nвеличественность \nвовсе не во благе.[w:6][func:head]\nА в пороке."}
 		eng={"[func:NoMercy1][func:DUB,phase1/21/1][w:5][speed:0.88]Я[w:1] изучала[w:1] тебя[waitall:4][w:3]...", "[func:Think][func:DUB,phase1/21/2][w:3]Следила за ка[w:3]ждым \nтвоим шагом.[w:6] [func:head][speed:1.12]И \nпришла к некоторым \nинтересным выводам.", "[func:NoMercy1][func:DUB,phase1/21/3][w:5][speed:1.20]Азриэль верил,[w:3] что \nты великий человек.[w:9] \n[func:Think][speed:0.88]Так и есть.", "[func:NoMercy1][func:DUB,phase1/21/4][w:5][speed:1.20]Но твоя \nвеличественность[w:1] \nвовсе не во благе.[w:12][func:head][speed:0.90]\nА в поро[w:2]ке."}
 		rus={"[func:NoMercy1][func:DUB,phase1/21/1]I studied you.", "[func:Think][func:DUB,phase1/21/2]I followed your every\nstep.[w:6] [func:head]And I did come \nto few interesting \nconclusions.", "[func:NoMercy1][func:DUB,phase1/21/3]Asriel believed \nyou're a great \nperson.[w:6] \n[func:Think]So you are.", "[func:NoMercy1][func:DUB,phase1/21/4]But your greatness \nis not in your good \nwill,[w:3] [func:head]but in your sin."}
