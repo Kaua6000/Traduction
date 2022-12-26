@@ -759,43 +759,43 @@ function HandleAttack()
 	if GetGlobal("progress") == 1 then
 		Encounter.SetVar("evadelevel",1)
 		nrus={'"Did she dodge?",[w:3]\n right?', "[func:NoMercy1]Look,[w:3] you're not \nmy prince,[w:3] \nand I'm not \nyour princess.", "[func:Bad]I can defend \nmyself." ,"[func:head][next]"}
-		rus={'[func:DUB,phase1/1/1]"Did she dodge?",[w:3]\n right?', "[func:DUB,phase1/1/2][func:NoMercy1]Look,[w:3] you're not \nmy prince,[w:3] \nand I'm not \nyour princess.", "[func:DUB,phase1/1/3][func:Bad]I can defend \nmyself." ,"[func:head][next]"}
-		eng={'[func:DUB,phase1/1/1][w:6]"Pera,[w:1] \nEla desviou?", \n[w:9]Ne?', "[func:DUB,phase1/1/2][func:NoMercy1][w:4]Послушай,[w:3] ты же \nне принц,[w:4] а я \nне твоя принцесса.", "[func:DUB,phase1/1/3][func:Bad][w:3]Я умею за себя \nпостоять.","[func:head][next]"}
+		rus={'[func:DUB,phase1/1/1]Voce deve estar se \nperguntando: "Pera, \nela desviou?", Ne?', "[func:DUB,phase1/1/2][func:NoMercy1]Olha,[w:3] voce nao e meu \nprincipe,[w:3] e eu nao \nsou sua princesa.", "[func:DUB,phase1/1/3][func:Bad]Eu sei me defender." ,"[func:head][next]"}
+		eng={'[func:DUB,phase1/1/1][w:6]Voce deve estar se \nperguntando: "Pera, \nela desviou?", Ne?', "[func:DUB,phase1/1/2][func:NoMercy1][w:4]Послушай,[w:3] ты же \nне принц,[w:4] а я \nне твоя принцесса.", "[func:DUB,phase1/1/3][func:Bad][w:3]Я умею за себя \nпостоять.","[func:head][next]"}
 		neng={'"Как она \nувернулась?", \n[w:3]верно?', "[func:NoMercy1]Послушай,[w:3] ты же \nне принц,[w:3] а я \nне твоя принцесса.", "[func:Bad]Я умею за себя \nпостоять.","[func:head][next]"}
 		engcom="Настало время для первого акта."
-		ruscom="It's time for the first act."
+		ruscom="Hora do primeiro ato."
 		wav={"phase1/k_5_new"}
 	elseif GetGlobal("progress") == 2 then
 		neng={"[func:NoMercy1]Позволь задать \nтебе вопрос.", "Ты серьёзно \nдумаешь,[w:3] \n[func:head]что я настолько \nглупа?" }
 		nrus={"[func:NoMercy1]Let me ask \nyou a question.", "Who do you think \nI am [func:head]to be \nso foolish?"  }
-		rus={"[func:DUB,phase1/2/1][func:NoMercy1]Let me ask \nyou a question.", "[func:DUB,phase1/2/2]Who do you think \nI am [func:head]to be \nso foolish?"  }
+		rus={"[func:DUB,phase1/2/1][func:NoMercy1]Deixa eu te fazer \numa pergunta.", "[func:DUB,phase1/2/2]Ta me achando \ncom [func:head]cara de idiota?"  }
 		eng={"[func:DUB,phase1/2/1][func:NoMercy1][w:2]Позволь задать \nтебе вопрос.", "[func:DUB,phase1/2/2][w:3]Ты серьёзно \nдумаешь,[w:2] \n[func:head]что я настолько \nглупа?" }
 		engcom="Вопрос с подвохом?"
-		ruscom="Is it rhetorical question?"
+		ruscom="Ainda pergunta?"
 		wav={"phase1/rain"}
 	elseif GetGlobal("progress") == 3 then
 		neng={"[func:NoMercy1][waitall:2]Всё,[waitall:1] [w:3]что ты \nнатворил на \nпути сюда[waitall:5][w:3]...[waitall:1][w:5]\nВся эта кровь \nна твоих руках[waitall:5][w:3]...", "Разве я настолько \nдура,[w:3] \n[func:head]чтобы верить тебе?" }
 		eng={"[func:DUB,phase1/3/1][func:NoMercy1][waitall:1][w:3]Всё,[waitall:1] что ты \nнатворил на \nпути сюда[waitall:3][w:3]...[waitall:1][w:5]\nВся эта кровь \nна твоих руках[waitall:5][w:3]...", "[func:DUB,phase1/3/2][w:3]Разве я[w:1] настолько[w:2] \nдура,[w:4] \n[func:head]чтобы верить [w:2]тебе?" }
 		nrus={"[func:NoMercy1][speed:0.55]Everything [speed:1][w:3]you \nhave done on \nyour way there[waitall:5][w:3]...[waitall:1][w:5] \nAll this dust on \nyour hands[waitall:5][w:3]...", "Am I the damn fool \n[func:head]to believe in you?" }
-		rus={"[func:DUB,phase1/3/1][func:NoMercy1][speed:0.55]Everything [speed:1][w:3]you \nhave done on \nyour way there[waitall:5][w:3]...[waitall:1][w:5] \nAll this dust on \nyour hands[waitall:5][w:3]...", "[func:DUB,phase1/3/2]Am I the damn fool \n[func:head]to believe in you?" }
+		rus={"[func:DUB,phase1/3/1][func:NoMercy1][speed:0.55]Depois de tudo [speed:1][w:3]que \nvoce fez[waitall:5][w:3]...[waitall:1][w:5] \nToda essa poeira em \nsuas maos[waitall:5][w:3]...", "[func:DUB,phase1/3/2]Acha que sou idiota \n[func:head]pra acreditar em \nvoce?" }
 		engcom="Чара истерично хихикает."
-		ruscom="Chara hysterically laughs."
+		ruscom="Chara ri histericamente."
 		wav={"phase1/random"}
 	elseif GetGlobal("progress") == 4 then
 		neng={"Мой ответ - [w:6][waitall:2]нет.", "[func:Think]Взгляни вокруг.[w:6] \nТы и я.[w:6] \nОдин на один.", "[func:NoMercy1]Этот коридор \nпропах запахом \nчеловеческой крови.", "На моих руках уже \nесть кровь людей. \n[w:6]Ты - [w:6]не первый [w:6]\nи не последний.", "[func:head]Но только ты \nпричинил столько \nболи.", "И это мой повод \nне опускать руки." }
 		eng={"[func:DUB,phase1/4/1][w:5]Мой ответ - [w:2]не[w:1]т.", "[func:DUB,phase1/4/2][func:Think][w:3]Взгляни вокруг.[w:14] \nТы[w:16] и я.[w:15] \nОдин[w:18] на один.", "[func:DUB,phase1/4/3][func:NoMercy1][w:4]Этот коридор[w:2] \nпропах[w:1] запахом \n[w:1]человеческой [w:1]крови.", "[func:DUB,phase1/4/4][w:5]На моих[w:1] руках[w:3] уже[w:2] \nесть [w:1]кровь людей. \n[w:10]Ты - [w:9]не первый [w:9]\nи[w:12] [waitall:1]не пос[w:1]лед[w:1]ний.", "[w:5][func:DUB,phase1/4/5][func:head]Но[w:2] только [w:1]ТЫ[w:3] \nпричинил [w:3]столько[w:1] \nболи!", "[func:DUB,phase1/4/6][w:1]И [w:2]это мой повод \nне [w:1]опускать руки." }
-		rus={"[func:DUB,phase1/4/1]My answer - [w:6]no.", "[func:DUB,phase1/4/2]Look around.[w:6]\n[func:Think]It's only you \nand me now.[w:6] \nOne per one.", "[func:DUB,phase1/4/3][func:NoMercy1]This corridor stinks \nwith the smell of \nhuman blood.", "[func:DUB,phase1/4/4]My hands are dirty \nfrom their blood \nas well.[w:6] You [w:6]are \nnot the first \n[w:6]nor the last.", "[func:DUB,phase1/4/5][func:head]But only you \ncaused so much pain.", "[func:DUB,phase1/4/6]And that's my reason \nto conquer once \nagain."}
+		rus={"[func:DUB,phase1/4/1]Minha resposta - [w:6]nao.", "[func:DUB,phase1/4/2]Olhe em volta.[w:6]\n[func:Think]somos so nos \ndois agora.[w:6] \num contra um.", "[func:DUB,phase1/4/3][func:NoMercy1]Esse corredor ta \nfedendo a sangue \nhumano.", "[func:DUB,phase1/4/4]Minhas maos tambem \nestao sujas com o\nsangue deles.[w:6] Voce [w:6]\nnao e o primeiro \n[w:6]nem o ultimo.", "[func:DUB,phase1/4/5][func:head]Mas voce sozinho \ncausou muita dor.", "[func:DUB,phase1/4/6]E essa e a razao \nde dominar novamente."}
 		nrus={"My answer - [w:6]no.", "Look around.[w:6]\n[func:Think]It's only you \nand me now.[w:6] \nOne per one.", "[func:NoMercy1]This corridor stinks \nwith the smell of \nhuman blood.", "My hands are dirty \nfrom their blood \nas well.[w:6] You [w:6]are \nnot the first \n[w:6]nor the last.", "[func:head]But only you \ncaused so much pain.", "And that's my reason \nto conquer once \nagain."}
 		engcom="Не забывай о своей миссии."
-		ruscom="Do not forget about your mission."
+		ruscom="Nao esqueca sua missao."
 		wav={"phase1/Reaction"}
 	elseif GetGlobal("progress") == 5 then
-		neng={"[func:NoMercy1]И знаешь,[w:3] что?", "[func:head]С меня хватит \nпритворства.", "[func:sad]Это ведь не \nвпервые?[w:6] \nЯ чувствую, [w:3]будто \nвсё повторяется \nраз за разом.", "[func:head4]Это не похоже на \nСбросы.[w:6] \[func:sad]Временная \nлиния остаётся \nвсё той же.", "[func:head4]Будто меняется[waitall:4][w:3]...[waitall:1][w:5]\n[func:Suprise1]Сам [w:3][waitall:3]мир.", "[func:NoMercy1]Это ведь[waitall:4][w:3]...[waitall:1][w:5] \n[func:head]Твоих рук дело?" }
+		neng={"[func:NoMercy1]И знаешь,[w:3] что?", "[func:head]С меня хватит \nпритворства.", "[func:sad]Это ведь не \nвпервые?[w:6] \nЯ чувствую, [w:3]будто \nвсё повторяется \nраз за разом.", "[func:head4]Это не похоже на \nСбросы.[w:6] [func:sad]Временная \nлиния остаётся \nвсё той же.", "[func:head4]Будто меняется[waitall:4][w:3]...[waitall:1][w:5]\n[func:Suprise1]Сам [w:3][waitall:3]мир.", "[func:NoMercy1]Это ведь[waitall:4][w:3]...[waitall:1][w:5] \n[func:head]Твоих рук дело?" }
 		eng={"[func:NoMercy1][func:DUB,phase1/5/1][w:3]И знаешь, что?", "[func:head][func:DUB,phase1/5/2][w:2]С меня хватит \nпритворства.", "[func:sad][func:DUB,phase1/5/3][w:3]Это ведь не \nвпервые?[w:12] \nЯ чувствую, [w:1]будто \nвсё [w:1]повторяется \nраз[w:2] за разом.", "[func:DUB,phase1/5/4][func:head4][w:3]Это не похоже на \nСбросы.[w:9] \n[func:sad]Временная [w:1]\nлиния остаётся \nвсё той же.", "[func:DUB,phase1/5/5][func:head4][w:3]Будто меняется[waitall:4][w:3]...[waitall:1][w:5]\n[func:Suprise1]Сам [w:5][waitall:1]мир.", "[func:NoMercy1][func:DUB,phase1/5/6][w:2]Это ведь[waitall:4][w:1]...[waitall:1][w:5] \n[func:head]Твоих [w:1]рук дело?" }
-		rus={"[func:NoMercy1][func:DUB,phase1/5/1]And ya know what?", "[func:head][func:DUB,phase1/5/2]I am done with \nall this acting.", "[func:sad][func:DUB,phase1/5/3]It's not the first \ntime,[w:3]is it? [w:6]I feel \nlike everything is \nrepeating every time.", "[func:DUB,phase1/5/4][func:head4]It is not Resets.[w:6] [func:sad]\nThe timeline  is still \nthe same.", "[func:DUB,phase1/5/5][func:head4]It feels like[waitall:4][w:3]...[waitall:1][w:5] [func:Suprise1]the\nwhole [waitall:2]world [waitall:1][w:5]is \nchanging.", "[func:NoMercy1][func:DUB,phase1/5/6]It is your fault[waitall:4][w:3]...[waitall:1][w:5] [func:head]\nRight?"}
-		nrus={"[func:NoMercy1]And ya know what?", "[func:head]I am done with \nall this acting.", "[func:sad]It's not the first \ntime,[w:3]is it? [w:6]I feel \nlike everything is \nrepeating every time.", "[func:head4]It is not Resets.[w:6] [func:sad]\nThe timeline  is still \nthe same.", "[func:head4]It feels like[waitall:4][w:3]...[waitall:1][w:5] [func:Suprise1]the\nwhole [waitall:2]world [waitall:1][w:5]is \nchanging.", "[func:NoMercy1]It is your fault[waitall:4][w:3]...[waitall:1][w:5] [func:head]\nRight?"}
+		rus={"[func:NoMercy1][func:DUB,phase1/5/1]E quer saber?", "[func:head][func:DUB,phase1/5/2]Estou cansada dessa \natuacao.", "[func:sad][func:DUB,phase1/5/3]Essa nao e a primeira \nvez,[w:3] nao e? [w:6]Sinto \nque tudo ta se \nrepetindo.", "[func:DUB,phase1/5/4][func:head4]E nao sao os Resets.[w:6] [func:sad]\nA linha do tempo e \na mesma.", "[func:DUB,phase1/5/5][func:head4]E como[waitall:4][w:3]...[waitall:1][w:5] [func:Suprise1]se o mundo [waitall:2]\ninteiro [waitall:1][w:5]mudasse.", "[func:NoMercy1][func:DUB,phase1/5/6]Isso e tudo sua \nculpa[waitall:4][w:3]...[waitall:1][w:5] [func:head]Ne?"}
+		nrus={"[func:NoMercy1]And ya know what?", "[func:head]Estou cansada de toda \nessa atuacao.", "[func:sad]Essa nao e a primeira \nvez,[w:3]nao e? [w:6]Sinto \nque tudo esta \nse repetindo.", "[func:head4]E nao sao os Resets.[w:6] [func:sad]\nA linha do tempo e a \nmesma.", "[func:head4]E como[waitall:4][w:3]...[waitall:1][w:5] [func:Suprise1]se o mundo [waitall:2]\ninteiro [waitall:1][w:5]\nestivesse mudando.", "[func:NoMercy1]Isso e tudo sua \nculpa[waitall:4][w:3]...[waitall:1][w:5] [func:head]\nNe?"}
 		engcom="В её словах есть смысл."
-		ruscom="She has a point."
+		ruscom="Ela tem um ponto."
 		wav={"phase1/stoplights"}
 	elseif GetGlobal("progress") == 6 then
 		neng={"[func:sad]Ты тоже это \nчувствуешь[waitall:5]...", "[func:head4]Тем не менее[waitall:4]...[waitall:1][w:4] [func:NoMercy1]Есть\nкое-что важнее,[w:10]\nчем мои \nпредчувствия.", "[func:mercy]Ты ведь чувствуешь? [w:15]\n[waitall:2][func:head]Грехи,[waitall:1][w:5] что ползут \nпо твоей спине?"}
