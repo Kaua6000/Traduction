@@ -752,6 +752,7 @@ function HandleAttack()
 		else
 		SetBubbleOffset(0,0)
 	end
+--inicio da fase 1
 	local diff=Encounter.GetVar("diff")
 	local lang=Encounter.GetVar("lang")
 		comments = commentater
@@ -973,7 +974,7 @@ function HandleAttack()
 		wav={"nothing"}
 		Encounter.SetVar("forcedfight",true)
 		Encounter.SetVar("FightGoes",false)
-------------------------------------------------------------------------
+--fim da fase 1
 	elseif GetGlobal("progress") == 27 then
 		neng={"Гх!", "[func:deadly][waitall:4][w:3]...", "[func:closedyesend]Ну конечно[waitall:4][w:3]...", "[func:NoMercy1]Даже если ты \nи слышишь[waitall:4][w:3]...[waitall:1][w:3] \n[func:Think]Ты не выше \nпоследствий.", "[func:NoMercy1]Сила нашего с тобой \nУР[waitall:4][w:3]...[waitall:1][w:3] \n[func:Think]Слишком высока,[w:3] \nчтобы ей \nпротивостоять.", "[func:head]У тебя есть высшая \nцель.[w:6] \nКак и у меня.", "[func:Devil]Так что давай не \nбудем отступать от \nнеё."}
 		eng={"[func:DUB,phase1/27/1][w:8]Гх!", "[func:deadly][waitall:4][w:3]...", "[func:closedyesend][func:DUB,phase1/27/2][w:5][speed:0.75]Ну [speed:0.65]конечно[waitall:4][w:3]...", "[func:NoMercy1][func:DUB,phase1/27/3][w:4][speed:0.90]Даже если ты \nи слышишь[waitall:3][w:2]...[waitall:1][w:2] \n[func:Think]Ты не выше \nпоследствий.", "[func:NoMercy1][func:DUB,phase1/27/4][w:6]Сила[speed:0.90] нашего с тобой [w:2]\nУ[w:2]Р[w:1] \n[func:Think][speed:1.15]слишком велика,[w:1] \nчтобы ей \nпротивостоять.", "[func:head][func:DUB,phase1/27/5][w:6][speed:0.90]У тебя есть высшая \nцель.[w:9][speed:0.80] \nКак и у меня.", "[func:Devil][func:DUB,phase1/27/6][w:5][speed:1.15]Так что[w:1] давай не \nбудем[speed:1.25] отступать от \nнеё."}
