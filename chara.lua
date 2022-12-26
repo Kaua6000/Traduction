@@ -974,7 +974,6 @@ function HandleAttack()
 		wav={"nothing"}
 		Encounter.SetVar("forcedfight",true)
 		Encounter.SetVar("FightGoes",false)
---fim da fase 1
 	elseif GetGlobal("progress") == 27 then
 		neng={"Гх!", "[func:deadly][waitall:4][w:3]...", "[func:closedyesend]Ну конечно[waitall:4][w:3]...", "[func:NoMercy1]Даже если ты \nи слышишь[waitall:4][w:3]...[waitall:1][w:3] \n[func:Think]Ты не выше \nпоследствий.", "[func:NoMercy1]Сила нашего с тобой \nУР[waitall:4][w:3]...[waitall:1][w:3] \n[func:Think]Слишком высока,[w:3] \nчтобы ей \nпротивостоять.", "[func:head]У тебя есть высшая \nцель.[w:6] \nКак и у меня.", "[func:Devil]Так что давай не \nбудем отступать от \nнеё."}
 		eng={"[func:DUB,phase1/27/1][w:8]Гх!", "[func:deadly][waitall:4][w:3]...", "[func:closedyesend][func:DUB,phase1/27/2][w:5][speed:0.75]Ну [speed:0.65]конечно[waitall:4][w:3]...", "[func:NoMercy1][func:DUB,phase1/27/3][w:4][speed:0.90]Даже если ты \nи слышишь[waitall:3][w:2]...[waitall:1][w:2] \n[func:Think]Ты не выше \nпоследствий.", "[func:NoMercy1][func:DUB,phase1/27/4][w:6]Сила[speed:0.90] нашего с тобой [w:2]\nУ[w:2]Р[w:1] \n[func:Think][speed:1.15]слишком велика,[w:1] \nчтобы ей \nпротивостоять.", "[func:head][func:DUB,phase1/27/5][w:6][speed:0.90]У тебя есть высшая \nцель.[w:9][speed:0.80] \nКак и у меня.", "[func:Devil][func:DUB,phase1/27/6][w:5][speed:1.15]Так что[w:1] давай не \nбудем[speed:1.25] отступать от \nнеё."}
@@ -987,6 +986,7 @@ function HandleAttack()
 		Encounter.SetVar("FightGoes",true)
 		Encounter.SetVar("globalstage","2")
 		Encounter.Call("WriteSavio")
+	--fim da fase 1
 	elseif GetGlobal("progress") == 28 then
 		neng={"[func:head]Мой папа,[w:3] Асгор,[w:3] \nизучал мою Душу.", "[func:NoMercy1]Он изучал,[w:3] что \nтакое человеческая \nРешимость.", "[func:Think]Он добился \nинтересных \nрезультатов.[w:6] \nКак я считаю.", "[func:NoMercy1]Ты,[w:3] конечно же,[w:3] \n[func:Bad]знаешь о \nфункциональном \nменю и \nСохранениях[waitall:4][w:3]...", "[func:NoMercy1]Но ты понятия не \nимеешь о[waitall:4][w:3]...[waitall:1][w:3] [func:head]\n[waitall:2]Деформировании[waitall:1][w:3]."}
 		eng={"[func:head][func:DUB,phase1/28/1][w:6][speed:0.75]Мой папа,[w:6] Асгор,[w:12][speed:0.94] \nизучал мою Душу.", "[func:NoMercy1][func:DUB,phase1/28/2][w:2]Он изучал,[w:3] что \nтакое человеческая \nРешимость.", "[func:Think][func:DUB,phase1/28/3][w:5]Он добился[speed:1.05] \nинтересных \nрезультатов.[w:6] \nКак я считаю.", "[func:NoMercy1][func:DUB,phase1/28/4][w:5][speed:1.10]Ты, конечно же, \n[func:Bad]знаешь о[speed:1.00] \nфункциональном \nменю и \nСохранениях[waitall:4][w:3]...", "[func:NoMercy1][func:DUB,phase1/28/5][w:5][speed:1.05]Но[w:2] ты понятия не \nимеешь[w:2] о[waitall:3][w:2]...[waitall:1][w:2] [func:head][speed:0.90]\nДеформировании[waitall:1][w:3]."}
