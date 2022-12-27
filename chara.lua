@@ -800,18 +800,18 @@ function HandleAttack()
 	elseif GetGlobal("progress") == 6 then
 		neng={"[func:sad]Ты тоже это \nчувствуешь[waitall:5]...", "[func:head4]Тем не менее[waitall:4]...[waitall:1][w:4] [func:NoMercy1]Есть\nкое-что важнее,[w:10]\nчем мои \nпредчувствия.", "[func:mercy]Ты ведь чувствуешь? [w:15]\n[waitall:2][func:head]Грехи,[waitall:1][w:5] что ползут \nпо твоей спине?"}
 		eng={"[func:DUB,phase1/6/1][func:sad][w:4]Ты тоже это \nчувствуешь[waitall:5]...", "[func:head4][func:DUB,phase1/6/2][w:2]Тем не менее[waitall:4]...[waitall:1][w:2] [func:NoMercy1]Есть\n[speed:1.17]кое-что важнее,\nчем мои \nпредчувствия.", "[func:DUB,phase1/6/3][func:mercy][w:3]Ты ведь чувствуешь? [w:15]\n[func:head]Грехи,[w:2] что ползут[w:2] \nпо твоей[w:1] спине."}
-		rus={"[func:DUB,phase1/6/1][func:sad]So you do feel \nthe same[waitall:4][w:3]...", "[func:head4][func:DUB,phase1/6/2]Nevertheless[waitall:4][w:3]...[waitall:1][w:4]\n[func:NoMercy1]There's something \nmore important than\nmy prejudgments.", "[func:DUB,phase1/6/3][func:mercy]Do you feel them?[w:15] [func:head]\n[waitall:2]Sins[waitall:1][w:5] on your back?"}
+		rus={"[func:DUB,phase1/6/1][func:sad]Entao voce sente \no mesmo[waitall:4][w:3]...", "[func:head4][func:DUB,phase1/6/2]Ainda assim[waitall:4][w:3]...[waitall:1][w:4]\n[func:NoMercy1]Tem algo mais \nimportante do que\nmeus pre julgamentos.", "[func:DUB,phase1/6/3][func:mercy]Consegue sentir?[w:15] [func:head]\n[waitall:2]Pecados rastejando[waitall:1][w:5] em suas costas?"}
 		nrus={"[func:sad]So you do feel \nthe same[waitall:4][w:3]...", "[func:head4]Nevertheless[waitall:4][w:3]...[waitall:1][w:4]\n[func:NoMercy1]There's something \nmore important than\nmy prejudgments.", "[func:mercy]Do you feel them?[w:15] [func:head]\n[waitall:2]Sins[waitall:1][w:5] on your back?"}
 		engcom="Нас не одурачить этой пугалкой."
-		ruscom="She can't fool us with those nasty words."
+		ruscom="Ela nao pode nos engar com essas palavras nojentas."
 		wav={"phase1/NoMercyToYou"}
 	elseif GetGlobal("progress") == 7 then
 		neng={"[func:NoMercy1]Так вот.[w:15] Мой тебе \nсовет [w:4]- не \nповорачивайся.", "[func:head]Иначе нож в ту же \nсекунду пронзит \nтвою глотку.", "Я не отпущу тебя \nбез достойной \nбитвы.[w:6] \nТы отплатишь за \nсвои грехи." }
 		eng={"[func:NoMercy1][func:DUB,phase1/7(!!!)/1][w:9][speed:0.80]Так вот.[w:7] Мой тебе \nсовет [w:3]-[w:3] не \nповорачивайся.", "[func:head][func:DUB,phase1/7(!!!)/2][w:4][speed:0.80]Иначе нож в ту же \nсекунду пронзит \nтвою глотку.", "[func:DUB,phase1/7(!!!)/3][w:6][speed:1.05]Я не отпущу тебя \nбез достойной \nбитвы.[w:6][speed:0.85] \nТы [w:1]отпла[w:2]тишь[speed:1.05] за \nсвои [w:1]грехи." }
-		rus={"[func:NoMercy1][func:DUB,phase1/7(!!!)/1]So I have an advice \nfor ya.[w:6] \n[waitall:2]Do not turn around.", "[func:head][func:DUB,phase1/7(!!!)/2]Because in that very \nmoment knife will \npierce your thin \nneck.", "[func:DUB,phase1/7(!!!)/3]I will not let you go \nwithout proper \nfight.[w:6] You will pay \nfor your actions."}
+		rus={"[func:NoMercy1][func:DUB,phase1/7(!!!)/1]Vou te dar \num aviso.[w:6] \n[waitall:2]Nao me de as costas.", "[func:head][func:DUB,phase1/7(!!!)/2]Por que nesse exato \nmomento, a faca ira \nperfurar seu lindo \npescocinho.", "[func:DUB,phase1/7(!!!)/3]Nao vou deixar voce sair \nsem uma luta \nde verdade.[w:6] Voce vai pagar \npelos seus atos."}
 		nrus={"[func:NoMercy1]So I have an advice \nfor ya.[w:6] \n[waitall:2]Do not turn around.", "[func:head]Because in that very \nmoment knife will \npierce your thin \nneck.", "I will not let you go \nwithout proper \nfight.[w:6] You will pay \nfor your actions."}
 		engcom="Ну,[w:3] этот совет был хорошим,[w:3] кажется."
-		ruscom="Welp,[w:3] that advice was solid,[w:3] I wonder."
+		ruscom="Bem,[w:3] quem avisa amigo e[w:3]..."
 		wav={"phase1/k_storm"}
 	elseif GetGlobal("progress") == 8 then
 		neng={"[func:sad]Кому я это говорю[waitall:4][w:3]...",  "[func:head4]Ты ведь не слышишь.[w:15] \n[func:sad]Не хочешь [w:5]или \nне можешь [w:5]- не \nважно.", "[func:Final_7]Полагаю[waitall:4][w:3]...[waitall:1][w:4] \n[func:NoMercy1]Мы оба знаем,[w:3] \n[func:head]что будет в конце."}
